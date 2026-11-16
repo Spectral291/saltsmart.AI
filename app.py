@@ -313,5 +313,6 @@ def export_csv(crop_key, ecw):
     )
 
 if __name__ == '__main__':
-    # Default port 5000 as specified in blueprint
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    port = int(os.environ.get('PORT', 5001))
+    print(f"Starting SaltSmart AI on http://localhost:{port}")
+    app.run(debug=True, host='0.0.0.0', port=port)

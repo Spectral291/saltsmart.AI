@@ -74,7 +74,8 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Open your browser at **`http://localhost:5000`** (or `http://127.0.0.1:5000`).
+Open your browser at **`http://localhost:5001`** (or `http://127.0.0.1:5001`).  
+*(Note: Port 5001 avoids macOS AirPlay Receiver port collision on 5000; configure via `PORT=5000 python app.py` if desired).*
 
 ---
 
